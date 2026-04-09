@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moulin Colchões — O Sono que Você Merece em Cachoeiro</title>
+  <meta name="description" content="Moulin Colchões em Cachoeiro de Itapemirim. Consultoria personalizada, entrega e montagem no mesmo dia. 5,0 estrelas no Google. Av. Beira-Rio, 125.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo.png" alt="Moulin Colchões">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#diferenciais" class="nav-link">Por Que a Moulin</a></li>
+        <li><a href="#produtos" class="nav-link">Colchões</a></li>
+        <li><a href="#depoimentos" class="nav-link">Avaliações</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/5528999694223?text=Olá! Vim pelo site e quero saber mais." target="_blank" class="btn btn-primary nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul class="mobile-nav-links">
+      <li><a href="#diferenciais">Por Que a Moulin</a></li>
+      <li><a href="#produtos">Colchões</a></li>
+      <li><a href="#depoimentos">Avaliações</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5528999694223" target="_blank" class="btn btn-primary">Falar no WhatsApp</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" id="heroBadge">
+          <span class="badge-stars">⭐⭐⭐⭐⭐</span>
+          <span>5,0 no Google · Cachoeiro de Itapemirim</span>
+        </div>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="hero-line">Seu Corpo Merece</span>
+          <span class="hero-line hero-line-accent">Uma Noite Perfeita.</span>
+          <span class="hero-line">Cachoeiro Já Sabe Disso.</span>
+        </h1>
+        <p class="hero-sub" id="heroSub">
+          Consultoria personalizada, entrega e montagem no mesmo dia.<br>
+          O colchão certo para o seu corpo, escolhido por especialistas.
+        </p>
+        <div class="hero-actions" id="heroActions">
+          <a href="https://wa.me/5528999694223?text=Olá! Vim pelo site e quero meu colchão hoje." target="_blank" class="btn btn-primary btn-large btn-pulse">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Quero Meu Colchão Hoje
+          </a>
+          <a href="#produtos" class="btn btn-ghost btn-large">
+            Ver Colchões
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image" id="heroImage">
+        <div class="hero-img-wrap">
+          <img src="assets/hero.jpg" alt="Loja Moulin Colchões — Cachoeiro de Itapemirim" class="hero-img">
+          <div class="hero-img-card">
+            <div class="img-card-icon">🚚</div>
+            <div>
+              <strong>Entrega no mesmo dia</strong>
+              <span>Montagem incluída</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#prova" class="hero-scroll-hint">
+      <span>Role para explorar</span>
+      <div class="scroll-line-anim"></div>
+    </a>
+  </section>
+
+  <!-- ===================== PROOF STRIP ===================== -->
+  <section class="proof-strip" id="prova">
+    <div class="proof-container">
+      <div class="proof-item">
+        <span class="proof-number" data-target="5" data-decimal="1">0</span>
+        <span class="proof-label">estrelas no Google</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-number" data-target="163">0</span>
+        <span class="proof-label">avaliações reais</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-number proof-static">1 dia</span>
+        <span class="proof-label">para entregar e montar</span>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item">
+        <span class="proof-number proof-static">∞</span>
+        <span class="proof-label">noites melhores</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEMA ===================== -->
+  <section class="problem" id="problema">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-content" data-aos="fade-right" data-aos-duration="800">
+          <span class="section-tag">A verdade que ninguém fala</span>
+          <h2 class="section-title">Você Sabe Aquela Sensação de Acordar Mais Cansado do Que Foi Dormir?</h2>
+          <div class="problem-text">
+            <p>Dor nas costas que só piora. Sono leve, interrompido, nunca suficiente. Você troca de posição dez vezes e ainda acorda mal-humorado.</p>
+            <p><strong>Isso não é insônia. É o colchão errado.</strong></p>
+            <p>A maioria das pessoas passa anos dormindo mal sem saber que a solução está a 4 minutos de distância — na Av. Beira-Rio, 125.</p>
+          </div>
+          <a href="#diferenciais" class="btn btn-outline">Conheça a Solução →</a>
+        </div>
+        <div class="problem-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+          <div class="problem-img-wrap">
+            <img src="assets/jean-1.jpg" alt="Jean Cypriano — Moulin Colchões">
+            <div class="problem-img-badge">
+              <span class="badge-dot"></span>
+              <span>Especialista em sono desde sempre</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Por que Cachoeiro escolhe a Moulin</span>
+        <h2 class="section-title">Mais Do Que Um Colchão.<br>Uma Experiência Completa.</h2>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="diff-icon-wrap">
+            <div class="diff-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+          </div>
+          <h3>Consultoria Personalizada</h3>
+          <p>Nossos especialistas analisam seu perfil de sono, peso e posição para indicar o colchão exato para o seu corpo. Sem achismo.</p>
+        </div>
+        <div class="diff-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="diff-icon-wrap">
+            <div class="diff-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+          </div>
+          <h3>Entrega no Mesmo Dia</h3>
+          <p>Você escolhe pela manhã e dorme no colchão novo à noite. Entregamos e montamos na sua casa sem custo adicional.</p>
+        </div>
+        <div class="diff-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="diff-icon-wrap">
+            <div class="diff-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+          <h3>5,0 Estrelas no Google</h3>
+          <p>163 clientes avaliaram. A loja mais bem avaliada de Cachoeiro. Não é sorte — é consistência no atendimento.</p>
+        </div>
+        <div class="diff-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="diff-icon-wrap">
+            <div class="diff-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+          </div>
+          <h3>Montagem Incluída</h3>
+          <p>Equipe própria de montagem. Você não se preocupa com nada — nós fazemos tudo até você estar confortável na cama nova.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUTOS ===================== -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Tecnologia de sono</span>
+        <h2 class="section-title">Colchões que Transformam Noites</h2>
+        <p class="section-sub">Cada modelo desenvolvido para um perfil diferente. Nossos especialistas ajudam você a encontrar o seu.</p>
+      </div>
+      <div class="produtos-grid">
+        <div class="produto-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="produto-img-wrap">
+            <img src="assets/jean-molas.jpg" alt="Colchão Molas Ensacadas — Moulin">
+            <div class="produto-badge">Mais Vendido</div>
+            <div class="produto-img-overlay">
+              <a href="https://wa.me/5528999694223?text=Olá! Tenho interesse no colchão de molas ensacadas." target="_blank" class="btn btn-white btn-sm">Quero Este</a>
+            </div>
+          </div>
+          <div class="produto-body">
+            <span class="produto-tag">Molas Ensacadas · Safira</span>
+            <h3>Conforto que Abraça.<br>Suporte que Sustenta.</h3>
+            <p>Molas independentes que respondem ao seu corpo sem transferir movimento. Você se vira — ele não acorda.</p>
+            <div class="produto-features">
+              <span>✓ Independência de movimento</span>
+              <span>✓ Ventilação superior</span>
+              <span>✓ Alta durabilidade</span>
+            </div>
+            <a href="https://wa.me/5528999694223?text=Olá! Tenho interesse no colchão Safira de molas ensacadas." target="_blank" class="btn btn-primary btn-full">Falar sobre este modelo →</a>
+          </div>
+        </div>
+        <div class="produto-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="produto-img-wrap">
+            <img src="assets/jean-2.jpg" alt="Cama Box — Moulin">
+            <div class="produto-badge produto-badge-alt">Alta Performance</div>
+            <div class="produto-img-overlay">
+              <a href="https://wa.me/5528999694223?text=Olá! Tenho interesse no Maze Ecoflex." target="_blank" class="btn btn-white btn-sm">Quero Este</a>
+            </div>
+          </div>
+          <div class="produto-body">
+            <span class="produto-tag">Ecoflex · Maze</span>
+            <h3>Para Quem Não Aceita<br>Dormir "Mais ou Menos".</h3>
+            <p>Tecnologia de alívio de pressão que aprende o formato do seu corpo. Equilíbrio perfeito entre conforto e sustentação.</p>
+            <div class="produto-features">
+              <span>✓ Alívio de pressão avançado</span>
+              <span>✓ Adapta ao corpo</span>
+              <span>✓ Sono mais profundo</span>
+            </div>
+            <a href="https://wa.me/5528999694223?text=Olá! Tenho interesse no colchão Maze Ecoflex." target="_blank" class="btn btn-outline btn-full">Falar sobre este modelo →</a>
+          </div>
+        </div>
+      </div>
+      <div class="produtos-cta" data-aos="fade-up">
+        <p>Não sabe qual modelo é para você?</p>
+        <a href="https://wa.me/5528999694223?text=Olá! Preciso de ajuda para escolher o colchão certo para mim." target="_blank" class="btn btn-ghost">Nossa consultoria é gratuita →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="depo-bg">
+      <div class="depo-orb"></div>
+    </div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag section-tag-light">O que dizem nossos clientes</span>
+        <h2 class="section-title section-title-light">163 Pessoas que Dormem Melhor</h2>
+      </div>
+      <div class="swiper testimonial-swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="depo-card">
+              <div class="depo-quote">"</div>
+              <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+              <p class="depo-text">"Excelente atendimento, entrega rápida, ótimos valores e é claro ótimo colchão."</p>
+              <div class="depo-author">
+                <div class="depo-avatar">KA</div>
+                <div class="depo-info">
+                  <strong>Kamilly Andrade</strong>
+                  <span>Google · Avaliação verificada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="depo-card">
+              <div class="depo-quote">"</div>
+              <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+              <p class="depo-text">"Ótimo atendimento e muita variedade de produtos."</p>
+              <div class="depo-author">
+                <div class="depo-avatar">D</div>
+                <div class="depo-info">
+                  <strong>Dani</strong>
+                  <span>Google · Avaliação verificada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="depo-card">
+              <div class="depo-quote">"</div>
+              <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+              <p class="depo-text">"Fui na loja da Beira-Rio, Karlisson e Girlene, bom atendimento deles."</p>
+              <div class="depo-author">
+                <div class="depo-avatar">PF</div>
+                <div class="depo-info">
+                  <strong>Pamella Christina Florençó</strong>
+                  <span>Google · Avaliação verificada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="depo-card">
+              <div class="depo-quote">"</div>
+              <div class="depo-stars">⭐⭐⭐⭐⭐</div>
+              <p class="depo-text">"Jean Cypriano — atendimento impecável. Entregaram tudo certinho e ainda montaram. Recomendo muito!"</p>
+              <div class="depo-author">
+                <div class="depo-avatar">JC</div>
+                <div class="depo-info">
+                  <strong>Jean Cypriano</strong>
+                  <span>Google · Avaliação verificada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-final" id="contato">
+    <div class="cta-bg-anim"></div>
+    <div class="container">
+      <div class="cta-content" data-aos="fade-up">
+        <span class="section-tag section-tag-light">Está esperando o quê?</span>
+        <h2 class="cta-title">Pronto Para Dormir Melhor Esta Noite?</h2>
+        <p class="cta-sub">Não precisa agendar. Não precisa esperar semanas. Venha até nossa loja na Av. Beira-Rio, 125 — ou fale agora no WhatsApp. A gente entrega e monta hoje.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/5528999694223?text=Olá! Quero dormir melhor esta noite. Me ajudam?" target="_blank" class="btn btn-white btn-xlarge btn-pulse">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar no WhatsApp Agora
+          </a>
+          <a href="https://maps.google.com/?q=Av.+Beira-Rio,+125,+Centro,+Cachoeiro+de+Itapemirim,+ES" target="_blank" class="btn btn-ghost-white btn-xlarge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Como Chegar
+          </a>
+        </div>
+        <div class="cta-info">
+          <div class="cta-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Av. Beira-Rio, 125 — Centro, Cachoeiro ES</span>
+          </div>
+          <div class="cta-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Seg–Sex: 09h–18h · Sáb: 09h–13h</span>
+          </div>
+          <div class="cta-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.1a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
+            <span>(28) 99969-4223</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Moulin Colchões" class="footer-logo">
+          <p>Inovação, cuidado e um sono revigorante. Em Cachoeiro de Itapemirim desde sempre.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/5528999694223" target="_blank" class="social-link" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#diferenciais">Por Que a Moulin</a></li>
+            <li><a href="#produtos">Nossos Colchões</a></li>
+            <li><a href="#depoimentos">Avaliações</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visite Nossa Loja</h4>
+          <p>Av. Beira-Rio, 125 — Centro<br>Cachoeiro de Itapemirim — ES<br>CEP 29300-205</p>
+          <p style="margin-top: 12px;"><strong>(28) 99969-4223</strong></p>
+          <p>Seg–Sex: 09h às 18h<br>Sábado: 09h às 13h</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Moulin Colchões. Todos os direitos reservados.</p>
+        <p>Site criado por <a href="https://www.instagram.com/rebirdmarketing/" target="_blank">Rebird Marketing Digital</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
