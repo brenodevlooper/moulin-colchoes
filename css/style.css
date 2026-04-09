@@ -1084,6 +1084,85 @@ ul { list-style: none; }
   font-weight: 700 !important;
 }
 
+/* ===================== COMO CHEGAR / MAPS ===================== */
+.maps-section {
+  padding: 120px 0;
+  background: var(--cream);
+}
+
+.maps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.maps-info .section-title { margin-bottom: 36px; }
+
+.maps-details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.maps-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.maps-detail-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--blue-light);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.maps-detail-item div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.maps-detail-item strong {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.maps-detail-item span {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.maps-embed {
+  height: 460px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-light);
+}
+
+.maps-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .maps-grid { grid-template-columns: 1fr; gap: 40px; }
+  .maps-embed { height: 320px; }
+}
+
 /* ===================== CTA FINAL ===================== */
 .cta-final {
   padding: 120px 0;
